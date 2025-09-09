@@ -16,6 +16,7 @@ function Dashboard() {
         <Link to="/dashboard/home" className="nav-link">Home</Link>
         <Link to="/dashboard/sobre" className="nav-link">Sobre a Empresa</Link>
         <Link to="/dashboard/servicos" className="nav-link">Serviços</Link>
+        <Link to="/dashboard/trabalhe" className="nav-link">Trabalhe Conosco</Link>
       </nav>
 
       <main className="dashboard-content">

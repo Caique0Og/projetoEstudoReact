@@ -51,8 +51,11 @@
   padding: 1rem 2rem;
   display: flex;
   gap: 1rem;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
   border-bottom: 1px solid rgba(71, 85, 105, 0.3);
 }
+
 
 .nav-link {
   color: #cbd5e1;

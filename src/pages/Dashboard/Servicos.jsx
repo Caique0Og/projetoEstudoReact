@@ -6,7 +6,7 @@ function Servicos() {
   const [produtos, setProdutos] = useState([
     {
       id: 1,
-      nome: 'Notebook Gamer Avançado',
+      nome: 'Sala de tomografia',
       preco: 4599.99,
       descricao1: 'Processador Intel Core i7 de 11ª geração',
       descricao2: '16GB RAM DDR4, SSD NVMe 512GB',
@@ -15,7 +15,7 @@ function Servicos() {
     },
     {
       id: 2,
-      nome: 'Smartphone Flagship',
+      nome: 'Consult[orio odontológico',
       preco: 3299.00,
       descricao1: 'Tela AMOLED 6.7" 120Hz',
       descricao2: 'Câmera tripla 108MP + ultra-wide + telephoto',
@@ -62,7 +62,7 @@ function Servicos() {
   });
 
 
-  /*
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (produtoForm.nome && produtoForm.preco) {
@@ -82,7 +82,7 @@ function Servicos() {
       });
     }
   };
-  */
+  
 
 
   const handleChange = (e) => {
@@ -111,10 +111,10 @@ function Servicos() {
 
   return (
     <div className="servicos-container">
-      {/* <h2>Cadastro de Produtos</h2> */}
+      <h2>Cadastro de Produtos</h2>
       
       {/* Formulário de criação comentado para desabilitar criação */}
-      {/*
+      
       <form onSubmit={handleSubmit} className="produto-form">
         <div className="form-grid">
           <div className="form-group">
@@ -200,7 +200,7 @@ function Servicos() {
           ➕ Adicionar Produto
         </button>
       </form>
-      */}
+     
 
       <div className="produtos-list">
         <h3>Produtos Cadastrados ({produtos.length})</h3>
