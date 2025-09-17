@@ -17,7 +17,7 @@
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #60a5fa, #06b6d4, #8b5cf6);
+  background: linear-gradient(135deg, #003434 0%, #008080 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -47,7 +47,7 @@
   display: block;
   font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #60a5fa, #06b6d4);
+  background: linear-gradient(135deg, #006161, #003939);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -55,7 +55,7 @@
 }
 
 .stat-label {
-  color: #94a3b8;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -69,7 +69,7 @@
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 3rem;
-  background: linear-gradient(135deg, #60a5fa, #06b6d4);
+  background: linear-gradient(135deg, #003434 0%, #008080 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -91,11 +91,11 @@
 }
 
 .cultura-card {
-  background: rgba(30, 41, 59, 0.6);
+  background: rgba(32,178,170, 0.85);
   backdrop-filter: blur(10px);
   padding: 2.5rem 2rem;
   border-radius: 16px;
-  border: 1px solid rgba(71, 85, 105, 0.3);
+  border: 1px solid rgba(1, 46, 44, 0.85);
   text-align: center;
   transition: all 0.4s ease;
   position: relative;
@@ -109,7 +109,7 @@
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #60a5fa, transparent);
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
   transition: left 0.8s ease;
 }
 
@@ -119,7 +119,7 @@
 
 .cultura-card:hover {
   transform: translateY(-8px);
-  background: rgba(30, 41, 59, 0.8);
+  background: rgba(2, 88, 84, 0.85);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   border-color: rgba(96, 165, 250, 0.5);
 }
@@ -135,14 +135,14 @@
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #60a5fa, #06b6d4);
+  background: linear-gradient(135deg, #006161, #003939);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .cultura-card p {
-  color: #cbd5e1;
+  color: #ffffff;
   line-height: 1.6;
   margin: 0;
 }
@@ -150,7 +150,7 @@
 /* Vagas Section */
 .vagas-section {
   padding: 4rem 2rem;
-  background: rgba(30, 41, 59, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   animation: fadeInUp 0.8s 0.4s ease forwards;
   animation-fill-mode: both;
 }
@@ -164,11 +164,11 @@
 }
 
 .vaga-card {
-  background: rgba(30, 41, 59, 0.6);
+  background: rgba(0, 40, 40, 0.8);
   backdrop-filter: blur(10px);
   padding: 2.5rem;
   border-radius: 16px;
-  border: 1px solid rgba(71, 85, 105, 0.3);
+  border: 1px solid rgba(0, 12, 12, 0.8);
   transition: all 0.4s ease;
   cursor: pointer;
   position: relative;
@@ -176,7 +176,7 @@
 
 .vaga-card:hover {
   transform: translateY(-5px);
-  background: rgba(30, 41, 59, 0.8);
+  background: rgba(0, 18, 18, 0.8);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   border-color: rgba(96, 165, 250, 0.5);
 }
@@ -227,11 +227,11 @@
 }
 
 .vaga-card h3 {
-  color: #60a5fa;
+  color: #ffffff;
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #60a5fa, #06b6d4);
+  background: linear-gradient(135deg, #ffffff, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -278,7 +278,7 @@
 .btn-ver-mais {
   width: 100%;
   padding: 0.8rem 1.5rem;
-  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  background: linear-gradient(358deg, #b6fffb 0%, #024343 100%);
   color: white;
   border: none;
   border-radius: 10px;
@@ -311,19 +311,19 @@
 }
 
 .beneficio-card {
-  background: rgba(30, 41, 59, 0.4);
+  background: rgba(32,178,170, 0.85);
   backdrop-filter: blur(10px);
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid rgba(71, 85, 105, 0.2);
+  border: 1px solid rgba(0, 46, 44, 0.85);
   text-align: center;
   transition: all 0.3s ease;
 }
 
 .beneficio-card:hover {
   transform: translateY(-3px);
-  background: rgba(30, 41, 59, 0.6);
-  border-color: rgba(96, 165, 250, 0.3);
+  background: rgba(10, 92, 87, 0.85);
+  border-color: rgba(2, 45, 43, 0.85);
 }
 
 .beneficio-icon {
@@ -332,14 +332,14 @@
 }
 
 .beneficio-card h4 {
-  color: #60a5fa;
+  color: #002f2f;
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .beneficio-card p {
-  color: #94a3b8;
+  color: #ffffff;
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0;
@@ -348,7 +348,7 @@
 /* Processo Section */
 .processo-section {
   padding: 4rem 2rem;
-  background: rgba(30, 41, 59, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   animation: fadeInUp 0.8s 0.8s ease forwards;
   animation-fill-mode: both;
 }
@@ -388,7 +388,7 @@
 .step-number {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #60a5fa, #06b6d4);
+  background: linear-gradient(153deg, #b6fffb 0%, #024343 100%);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -399,15 +399,15 @@
   z-index: 2;
   flex-shrink: 0;
   margin: 0 2rem;
-  box-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
+  box-shadow: 0 0 20px rgba(227, 236, 247, 0.5);
 }
 
 .step-content {
   flex: 1;
   max-width: 300px;
-  background: rgba(30, 41, 59, 0.6);
+  background: rgba(0, 40, 40, 0.8);
   backdrop-filter: blur(10px);
   padding: 2rem;
   border-radius: 16px;
-  border: 1px solid rgba(71, 85, 105, 0.3);
+  border: 1px solid rgba(0, 10, 10, 0.8);
 }
