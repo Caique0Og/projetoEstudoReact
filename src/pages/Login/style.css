@@ -3,14 +3,14 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
   padding: 2rem;
 }
 
 .login-form {
-  background: rgba(30, 41, 59, 0.8);
+  background: rgba(0,128,128, 0.85); /*cartão*/
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  border: 1px solid rgba(0, 52, 52, 0.85);
   border-radius: 16px;
   padding: 2.5rem;
   width: 100%;
@@ -24,10 +24,10 @@
 .login-form:hover {
   transform: translateY(-2px);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
-}
+} 
 
 .login-form h2 {
-  color: #60a5fa;
+  color: #ffffff;    /*login*/
   font-size: 1.875rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -43,7 +43,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  background: linear-gradient(90deg, #ffffff, #20B2AA);
   border-radius: 2px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .login-form input:focus {
-  border-color: #3b82f6;
+  border-color: #ffffff;
   background: rgba(15, 23, 42, 0.9);
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
   transform: translateY(-1px);
@@ -76,7 +76,7 @@
 .login-form button[type="submit"] {
   width: 100%;
   padding: 1rem 1.5rem;
-  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  background: linear-gradient(358deg, #b6fffb 0%, #024343 100%);  /*#####*/
   color: white;
   border: none;
   border-radius: 12px;
@@ -92,7 +92,7 @@
 
 .login-form button[type="submit"]:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
 }
 
 .login-form button[type="submit"]:active {
@@ -142,7 +142,7 @@
 }
 
 .demo-credentials p:first-child {
-  color: #60a5fa;
+  color: #ffffff;
   font-weight: 600;
 }
 
