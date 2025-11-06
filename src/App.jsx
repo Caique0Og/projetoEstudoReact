@@ -8,11 +8,13 @@ import HomePage from './pages/Dashboard/Home';
 import Sobre from './pages/Dashboard/Sobre';
 import Servicos from './pages/Dashboard/Servicos';
 import Trabalhe from './pages/Dashboard/Trabalhe'; // Importe o novo componente
+import ScrollToTop from "./components/ScrollToTop"; // Importe o componente ScrollToTop
 
 function App() {
   return (
     <AuthProvider>
       <Router>
+        <ScrollToTop /> 
         <Routes>
           <Route path="/login" element={<Login />} />
           

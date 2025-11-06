@@ -38,13 +38,14 @@ function Trabalhe() {
     },
     {
       id: 'marketing',
-      titulo: 'Analista de Marketing Digital',
+      titulo: 'Coordenador de Salas Hospitalares',
       nivel: 'Pleno',
       modalidade: 'Híbrido',
       salario: 'R$ 6.000 - 12.000',
-      requisitos: ['Google Analytics', 'Google Ads', 'SEO/SEM', 'Meta Ads', 'Data Studio'],
-      diferenciais: ['Python', 'SQL', 'Automation Tools'],
-      descricao: 'Desenvolver estratégias de marketing digital, otimizar campanhas e analisar métricas de performance.',
+      requisitos: ['Formação em Administração Hospitalar, Enfermagem ou áreas correlatas', 'Experiência com gestão de recursos físicos e agendamento de salas hospitalares',
+      'Conhecimento em normas da vigilância sanitária e controle de biossegurança', 'Domínio de ferramentas de gestão hospitalar ou ERP', 'Boa comunicação e liderança de equipes multidisciplinares'],
+      diferenciais: ['Certificação em Gestão da Qualidade ou Lean Healthcare', 'Experiência prévia em hospitais de médio ou grande porte', 'Noções de Power BI ou Excel avançado para relatórios'],
+      descricao: 'Responsável pela gestão e agendamento das salas, garantindo eficiência e cumprimento das normas sanitárias.',
       icone: '📈'
     },
     {
@@ -57,7 +58,50 @@ function Trabalhe() {
       diferenciais: ['Kubernetes', 'Microservices', 'CI/CD'],
       descricao: 'Desenvolver aplicações completas, desde o front-end até infraestrutura, liderando projetos técnicos.',
       icone: '🚀'
+    },
+    {
+      id: 'fullstack',
+      titulo: 'Auxiliar de Higienização Hospitalar',
+      nivel: 'Operacional',
+      modalidade: 'Presencial',
+      salario: 'R$ 1.800 - 2.500',
+      categoria: 'Serviços de Apoio Hospitalar',
+      requisitos: [
+      'Ensino fundamental completo',
+      'Conhecimento em técnicas de higienização e desinfecção hospitalar',
+      'Capacidade de seguir protocolos rígidos de limpeza e segurança',
+      'Atenção aos detalhes e responsabilidade com ambientes críticos'
+      ],
+      diferenciais: [
+      'Curso de biossegurança hospitalar',
+      'Experiência anterior em clínicas, laboratórios ou hospitais',
+      'Noções básicas de controle de infecção hospitalar'
+      ],
+      descricao: 'Realiza a limpeza, desinfecção e organização das salas antes e após cada uso, garantindo o cumprimento das normas da vigilância sanitária. Atua em conjunto com as equipes médicas e técnicas para assegurar um ambiente seguro, higienizado e pronto para o próximo atendimento.',
+      icone: '🧹'
+    },
+    {
+      id: 'Manutencao',
+      titulo: 'Técnico de Manutenção Hospitalar',
+      nivel: 'Técnico',
+      modalidade: 'Presencial',
+      salario: 'R$ 3.000 - 5.500',
+      categoria: 'Manutenção e Infraestrutura Hospitalar',
+      requisitos: [
+      'Curso técnico em eletrônica, mecânica, eletrotécnica ou áreas afins',
+      'Conhecimento em manutenção preventiva e corretiva de equipamentos hospitalares',
+      'Capacidade de leitura e interpretação de manuais técnicos',
+      'Organização e comprometimento com prazos'
+      ],
+      diferenciais: [
+      'Experiência com equipamentos de diagnóstico por imagem (como tomógrafos e ressonância magnética)',
+      'Certificações em manutenção hospitalar ou elétrica predial',
+      'Noções de segurança do trabalho e NR10'
+      ],
+    descricao: 'Responsável pela manutenção preventiva e corretiva de equipamentos hospitalares e da infraestrutura predial. Garante o bom funcionamento dos aparelhos, realizando inspeções regulares, ajustes técnicos e acompanhamento de fornecedores. Atua para minimizar o tempo de inatividade e manter a segurança operacional das salas e unidades clínicas.',
+    icone: '🧰'
     }
+
   ];
 
   const beneficios = [

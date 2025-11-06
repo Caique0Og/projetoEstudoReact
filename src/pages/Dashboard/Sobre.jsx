@@ -15,7 +15,7 @@ function Sobre() {
           <div className="timeline-marker"></div>
           <div className="timeline-content">
             <h3>2020 - Fundação</h3>
-            <p>Nossa empresa foi fundada com o objetivo de fornecer soluções inovadoras e revolucionar o mercado com tecnologia de ponta.</p>
+            <p>Nosso sistema nasceu com a missão de modernizar a gestão hospitalar, conectando profissionais de saúde a espaços de atendimento de forma simples e segura.</p>
           </div>
         </div>
         
@@ -23,7 +23,7 @@ function Sobre() {
           <div className="timeline-marker"></div>
           <div className="timeline-content">
             <h3>2021 - Expansão</h3>
-            <p>Crescimento da equipe e desenvolvimento de nossa primeira suite completa de produtos para atender diferentes segmentos.</p>
+            <p>Ampliamos nossa plataforma para incluir o aluguel de salas especializadas, otimizando a utilização de estruturas médicas e facilitando o agendamento para clínicas e consultórios.</p>
           </div>
         </div>
         
@@ -31,7 +31,7 @@ function Sobre() {
           <div className="timeline-marker"></div>
           <div className="timeline-content">
             <h3>2023 - Inovação</h3>
-            <p>Lançamento de tecnologias disruptivas e parcerias estratégicas que nos posicionaram como líderes do setor.</p>
+            <p>Implementamos novas tecnologias de automação e monitoramento, tornando o processo de reserva mais rápido, transparente e integrado às rotinas hospitalares.</p>
           </div>
         </div>
         
@@ -39,7 +39,7 @@ function Sobre() {
           <div className="timeline-marker"></div>
           <div className="timeline-content">
             <h3>2024 - Presente</h3>
-            <p>Continuamos evoluindo, sempre focados em entregar valor excepcional e superar as expectativas de nossos clientes.</p>
+            <p>Seguimos evoluindo com foco em eficiência e confiabilidade, oferecendo soluções inteligentes que transformam a forma como hospitais e profissionais gerenciam seus espaços.</p>
           </div>
         </div>
       </div>
@@ -77,17 +77,17 @@ function Sobre() {
         <div className="missao-grid">
           <div className="missao-item">
             <h4>Nossa Missão</h4>
-            <p>Democratizar o acesso à tecnologia de qualidade, oferecendo soluções que realmente fazem a diferença na vida das pessoas e empresas.</p>
+            <p>Facilitar o acesso a espaços hospitalares modernos e bem equipados, promovendo eficiência e praticidade para profissionais de saúde e instituições que buscam oferecer o melhor atendimento aos pacientes.</p>
           </div>
           
           <div className="missao-item">
             <h4>Nossa Visão</h4>
-            <p>Ser reconhecida como a empresa mais inovadora e confiável do setor, transformando desafios em oportunidades.</p>
+            <p>Ser referência em gestão e locação de salas hospitalares, impulsionando a digitalização do setor e tornando o uso de espaços médicos mais inteligente, acessível e sustentável.</p>
           </div>
           
           <div className="missao-item">
             <h4>Nosso Compromisso</h4>
-            <p>Entregar resultados excepcionais através de uma equipe apaixonada, processos eficientes e tecnologia de vanguarda.</p>
+            <p>Garantir qualidade, transparência e confiabilidade em cada reserva, com uma plataforma segura, processos ágeis e uma equipe dedicada a aprimorar a experiência de quem cuida da saúde.</p>
           </div>
         </div>
       </div>

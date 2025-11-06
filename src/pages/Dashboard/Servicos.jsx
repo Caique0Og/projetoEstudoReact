@@ -8,46 +8,46 @@ function Servicos() {
       id: 1,
       nome: 'Sala de tomografia',
       preco: 4599.99,
-      descricao1: 'Processador Intel Core i7 de 11ª geração',
-      descricao2: '16GB RAM DDR4, SSD NVMe 512GB',
-      descricao3: 'Placa de vídeo NVIDIA RTX 3060 6GB',
-      categoria: 'eletronicos'
+      descricao1: 'Sala projetada para exames de imagem de alta precisão, oferecendo conforto e eficiência no atendimento.',
+      descricao2: 'Tomógrafo Philips 64 canais, mesa deslizante automatizada, iluminação cirúrgica LED, isolamento radiológico.',
+      descricao3: 'Integração com o sistema PACS para armazenamento e compartilhamento seguro de imagens.',
+      categoria: 'Diagnóstico por Imagem'
     },
     {
       id: 2,
-      nome: 'Consult[orio odontológico',
+      nome: 'Sala de Ultrassonografia',
       preco: 3299.00,
-      descricao1: 'Tela AMOLED 6.7" 120Hz',
-      descricao2: 'Câmera tripla 108MP + ultra-wide + telephoto',
-      descricao3: 'Bateria 5000mAh com carregamento rápido 65W',
-      categoria: 'eletronicos'
+      descricao1: 'Ambiente silencioso, climatizado e confortável para exames de rotina e diagnósticos de imagem.',
+      descricao2: 'Ultrassom 3D de alta frequência, impressora térmica, sistema de gel aquecido, iluminação indireta.',
+      descricao3: 'Compatível com exames obstétricos e cardiológicos.',
+      categoria: 'Diagnóstico por Imagem'
     },
     {
       id: 3,
-      nome: 'Cadeira Ergonômica Premium',
+      nome: 'Sala de Ressonância Magnética',
       preco: 1299.90,
-      descricao1: 'Design ergonômico com apoio lombar ajustável',
-      descricao2: 'Estofamento em mesh respirável',
-      descricao3: 'Base em alumínio com rodízios de 360 graus',
-      categoria: 'moveis'
+      descricao1: 'Ambiente isolado magneticamente, preparado para exames detalhados e de alta resolução.',
+      descricao2: 'Ressonância 1.5T, bobinas dedicadas, software de imagem DICOM, painel de controle externo.',
+      descricao3: 'Sistema antivibração e cancelamento de ruído para maior conforto do paciente.',
+      categoria: 'Diagnóstico por Imagem'
     },
     {
       id: 4,
-      nome: 'Tablet Profissional',
-      preco: 2899.50,
-      descricao1: 'Tela 11" Liquid Retina com True Tone',
-      descricao2: 'Chip A14 Bionic com Neural Engine',
-      descricao3: 'Compatível com Apple Pencil 2ª geração',
-      categoria: 'informatica'
+      nome: 'Consultório Médico Padrão',
+      preco: 899.50,
+      descricao1: 'Sala funcional para consultas médicas de diversas especialidades.',
+      descricao2: 'Mesa e cadeira ergonômicas, pia clínica, computador com prontuário eletrônico e iluminação suave.',
+      descricao3: 'Possibilidade de personalização visual conforme a especialidade médica.',
+      categoria: 'Atendimento Clínico'
     },
     {
       id: 5,
-      nome: 'Fone Bluetooth Noise Cancelling',
+      nome: 'Sala de Coleta Laboratorial',
       preco: 899.99,
-      descricao1: 'Cancelamento ativo de ruído (ANC)',
-      descricao2: 'Bateria com até 30 horas de duração',
-      descricao3: 'Som surround com drivers de 40mm',
-      categoria: 'eletronicos'
+      descricao1: 'Sala segura e higienizada para coleta de sangue e amostras biológicas.',
+      descricao2: 'Cadeiras de coleta ajustáveis, centrífuga, refrigerador de amostras e bancada de aço inox.',
+      descricao3: 'Sistema de rastreio digital integrado ao banco de dados laboratorial.',
+      categoria: 'Análises Clínicas'
     }
   ]);
 
@@ -99,10 +99,9 @@ function Servicos() {
   // Função para formatar o nome da categoria
   const formatarCategoria = (categoria) => {
     const categorias = {
-      'eletronicos': 'Eletrônicos',
-      'informatica': 'Informática',
-      'moveis': 'Móveis',
-      'vestuario': 'Vestuário',
+      'diagnosticoporimagem': 'DiagP/Imagem',
+      'atendimentoclinico': 'Atendimento Clínico',
+      'analisesclinicas': 'Análises Clínicas',
       'outros': 'Outros'
     };
     return categorias[categoria] || categoria;
@@ -111,20 +110,20 @@ function Servicos() {
 
   return (
     <div className="servicos-container">
-      <h2>Cadastro de Produtos</h2>
+      <h2>Cadastrar Salas</h2>
       
       {/* Formulário de criação comentado para desabilitar criação */}
       
       <form onSubmit={handleSubmit} className="produto-form">
         <div className="form-grid">
           <div className="form-group">
-            <label>Nome do Produto</label>
+            <label>Nome da Sala</label>
             <input
               type="text"
               name="nome"
               value={produtoForm.nome}
               onChange={handleChange}
-              placeholder="Ex: Notebook Gamer"
+              placeholder="Ex: Sala de Fisioterapia"
               required
             />
           </div>
@@ -152,10 +151,9 @@ function Servicos() {
               required
             >
               <option value="">Selecione uma categoria</option>
-              <option value="eletronicos">Eletrônicos</option>
-              <option value="informatica">Informática</option>
-              <option value="moveis">Móveis</option>
-              <option value="vestuario">Vestuário</option>
+              <option value="diagnosticoporimagem">DiagP/Imagem</option>
+              <option value="atendimentoclinico">Atendimento Clínico</option>
+              <option value="analisesclinicas">Analíses Clínicas</option>
               <option value="outros">Outros</option>
             </select>
           </div>
@@ -168,7 +166,7 @@ function Servicos() {
               name="descricao1"
               value={produtoForm.descricao1}
               onChange={handleChange}
-              placeholder="Ex: Processador Intel i7, 16GB RAM"
+              placeholder="Ex: Espaço amplo e ventilado, projetado para reabilitação física e terapias personalizadas."
               rows="3"
             />
           </div>
@@ -179,7 +177,7 @@ function Servicos() {
               name="descricao2"
               value={produtoForm.descricao2}
               onChange={handleChange}
-              placeholder="Ex: SSD 512GB, Placa de Vídeo RTX 3060"
+              placeholder="Ex: Macas, faixas elásticas, esteira, bicicleta ergométrica, colchonetes e bolas terapêuticas."
               rows="3"
             />
           </div>
@@ -190,23 +188,23 @@ function Servicos() {
               name="descricao3"
               value={produtoForm.descricao3}
               onChange={handleChange}
-              placeholder="Ex: Garantia de 12 meses, Windows 11 incluído"
+              placeholder="Ex: Sistema de som ambiente relaxante e aromaterapia opcional."
               rows="3"
             />
           </div>
         </div>
 
         <button type="submit" className="add-produto-btn">
-          ➕ Adicionar Produto
+          ➕ Adicionar Sala
         </button>
       </form>
      
 
       <div className="produtos-list">
-        <h3>Produtos Cadastrados ({produtos.length})</h3>
+        <h3>Salas Cadastradas ({produtos.length})</h3>
         
         {produtos.length === 0 ? (
-          <p className="empty-message">Nenhum produto cadastrado ainda.</p>
+          <p className="empty-message">Nenhuma sala foi cadastrada ainda.</p>
         ) : (
           <div className="produtos-grid">
             {produtos.map(produto => (

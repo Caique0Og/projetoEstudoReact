@@ -1,12 +1,14 @@
 import './Home.css';
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className="homepage-container">
       <div className="hero-section">
         <h2 className="hero-title">Bem-vindo à Nossa Plataforma</h2>
         <p className="hero-subtitle">
-          Sua jornada digital começa aqui. Explore todas as possibilidades que oferecemos.
+           Encontre a sala perfeita para o seu atendimento médico. Reserve espaços modernos e equipados dentro do hospital com apenas alguns cliques.
         </p>
       </div>
 
@@ -49,8 +51,8 @@ function HomePage() {
         <h3>Pronto para começar?</h3>
         <p>Explore as funcionalidades disponíveis através do menu de navegação.</p>
         <div className="cta-buttons">
-          <button className="cta-primary">Começar Agora</button>
-          <button className="cta-secondary">Saiba Mais</button>
+          <button className="cta-primary" onClick={() => navigate("/dashboard/servicos")}>Começar Agora</button>
+          <button className="cta-secondary" onClick={() => navigate("/dashboard/sobre")}>Saiba Mais</button>
         </div>
       </div>
     </div>
