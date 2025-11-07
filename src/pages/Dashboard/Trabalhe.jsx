@@ -14,95 +14,134 @@ function Trabalhe() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const vagas = [
-    {
-      id: 'frontend',
-      titulo: 'Desenvolvedor Front-end React',
-      nivel: 'Pleno/Sênior',
-      modalidade: 'Híbrido',
-      salario: 'R$ 8.000 - 15.000',
-      requisitos: ['React 18+', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Git'],
-      diferenciais: ['GraphQL', 'Jest', 'Docker', 'AWS'],
-      descricao: 'Desenvolver interfaces modernas e responsivas, trabalhar com APIs REST e GraphQL, e contribuir para a arquitetura front-end.',
-      icone: '⚡'
-    },
-    {
-      id: 'designer',
-      titulo: 'Designer UX/UI',
-      nivel: 'Júnior/Pleno',
-      modalidade: 'Remoto',
-      salario: 'R$ 5.000 - 10.000',
-      requisitos: ['Figma', 'Adobe Creative Suite', 'Design Systems', 'Prototipagem'],
-      diferenciais: ['After Effects', 'Framer', 'HTML/CSS básico'],
-      descricao: 'Criar experiências digitais excepcionais, desenvolver design systems e colaborar com desenvolvedores.',
-      icone: '🎨'
-    },
-    {
-      id: 'marketing',
-      titulo: 'Coordenador de Salas Hospitalares',
-      nivel: 'Pleno',
-      modalidade: 'Híbrido',
-      salario: 'R$ 6.000 - 12.000',
-      requisitos: ['Formação em Administração Hospitalar, Enfermagem ou áreas correlatas', 'Experiência com gestão de recursos físicos e agendamento de salas hospitalares',
-      'Conhecimento em normas da vigilância sanitária e controle de biossegurança', 'Domínio de ferramentas de gestão hospitalar ou ERP', 'Boa comunicação e liderança de equipes multidisciplinares'],
-      diferenciais: ['Certificação em Gestão da Qualidade ou Lean Healthcare', 'Experiência prévia em hospitais de médio ou grande porte', 'Noções de Power BI ou Excel avançado para relatórios'],
-      descricao: 'Responsável pela gestão e agendamento das salas, garantindo eficiência e cumprimento das normas sanitárias.',
-      icone: '📈'
-    },
-    {
-      id: 'fullstack',
-      titulo: 'Desenvolvedor Full Stack',
-      nivel: 'Sênior',
-      modalidade: 'Híbrido',
-      salario: 'R$ 12.000 - 20.000',
-      requisitos: ['Node.js', 'React', 'PostgreSQL', 'AWS', 'Docker'],
-      diferenciais: ['Kubernetes', 'Microservices', 'CI/CD'],
-      descricao: 'Desenvolver aplicações completas, desde o front-end até infraestrutura, liderando projetos técnicos.',
-      icone: '🚀'
-    },
-    {
-      id: 'fullstack',
-      titulo: 'Auxiliar de Higienização Hospitalar',
-      nivel: 'Operacional',
-      modalidade: 'Presencial',
-      salario: 'R$ 1.800 - 2.500',
-      categoria: 'Serviços de Apoio Hospitalar',
-      requisitos: [
+  {
+    id: 'coordenador-quartos',
+    titulo: 'Coordenador de Quartos Hospitalares',
+    nivel: 'Pleno/Sênior',
+    modalidade: 'Híbrido',
+    salario: 'R$ 8.000 - 15.000',
+    categoria: 'Gestão Hospitalar',
+    requisitos: [
+      'Formação em Administração Hospitalar, Enfermagem ou áreas correlatas',
+      'Experiência com gestão de leitos e agendamento de quartos hospitalares',
+      'Conhecimento em normas da vigilância sanitária e controle de infecção',
+      'Domínio de sistemas de gestão hospitalar ou ERP',
+      'Liderança de equipes multidisciplinares'
+    ],
+    diferenciais: [
+      'Certificação em Gestão da Qualidade ou Lean Healthcare',
+      'Experiência em hospitais de médio/grande porte',
+      'Conhecimento em Power BI ou Excel avançado'
+    ],
+    descricao: 'Gerenciar a alocação e agendamento de quartos hospitalares, otimizando ocupação e garantindo cumprimento das normas sanitárias.',
+    icone: '🏥'
+  },
+  {
+    id: 'recepcionista',
+    titulo: 'Recepcionista Hospitalar',
+    nivel: 'Júnior/Pleno',
+    modalidade: 'Presencial',
+    salario: 'R$ 2.000 - 3.500',
+    categoria: 'Atendimento ao Cliente',
+    requisitos: [
+      'Ensino médio completo',
+      'Experiência com atendimento ao público',
+      'Conhecimento de pacote Office',
+      'Boa comunicação e empatia'
+    ],
+    diferenciais: [
+      'Curso de atendimento hospitalar',
+      'Conhecimento de sistemas de agendamento',
+      'Noções básicas de planos de saúde'
+    ],
+    descricao: 'Realizar o acolhimento de pacientes e familiares, gerenciar check-in/check-out dos quartos e fornecer informações sobre serviços hospitalares.',
+    icone: '👨‍💼'
+  },
+  {
+    id: 'auxiliar-limpeza',
+    titulo: 'Auxiliar de Higienização de Quartos',
+    nivel: 'Operacional',
+    modalidade: 'Presencial',
+    salario: 'R$ 1.800 - 2.500',
+    categoria: 'Serviços de Apoio',
+    requisitos: [
       'Ensino fundamental completo',
-      'Conhecimento em técnicas de higienização e desinfecção hospitalar',
-      'Capacidade de seguir protocolos rígidos de limpeza e segurança',
-      'Atenção aos detalhes e responsabilidade com ambientes críticos'
-      ],
-      diferenciais: [
+      'Conhecimento em técnicas de limpeza hospitalar',
+      'Capacidade de seguir protocolos de biossegurança',
+      'Responsabilidade e atenção aos detalhes'
+    ],
+    diferenciais: [
       'Curso de biossegurança hospitalar',
-      'Experiência anterior em clínicas, laboratórios ou hospitais',
-      'Noções básicas de controle de infecção hospitalar'
-      ],
-      descricao: 'Realiza a limpeza, desinfecção e organização das salas antes e após cada uso, garantindo o cumprimento das normas da vigilância sanitária. Atua em conjunto com as equipes médicas e técnicas para assegurar um ambiente seguro, higienizado e pronto para o próximo atendimento.',
-      icone: '🧹'
-    },
-    {
-      id: 'Manutencao',
-      titulo: 'Técnico de Manutenção Hospitalar',
-      nivel: 'Técnico',
-      modalidade: 'Presencial',
-      salario: 'R$ 3.000 - 5.500',
-      categoria: 'Manutenção e Infraestrutura Hospitalar',
-      requisitos: [
-      'Curso técnico em eletrônica, mecânica, eletrotécnica ou áreas afins',
-      'Conhecimento em manutenção preventiva e corretiva de equipamentos hospitalares',
-      'Capacidade de leitura e interpretação de manuais técnicos',
-      'Organização e comprometimento com prazos'
-      ],
-      diferenciais: [
-      'Experiência com equipamentos de diagnóstico por imagem (como tomógrafos e ressonância magnética)',
-      'Certificações em manutenção hospitalar ou elétrica predial',
-      'Noções de segurança do trabalho e NR10'
-      ],
-    descricao: 'Responsável pela manutenção preventiva e corretiva de equipamentos hospitalares e da infraestrutura predial. Garante o bom funcionamento dos aparelhos, realizando inspeções regulares, ajustes técnicos e acompanhamento de fornecedores. Atua para minimizar o tempo de inatividade e manter a segurança operacional das salas e unidades clínicas.',
-    icone: '🧰'
-    }
-
-  ];
+      'Experiência em limpeza de ambientes hospitalares',
+      'Noções de controle de infecção'
+    ],
+    descricao: 'Realizar a limpeza e desinfecção dos quartos hospitalares entre ocupações, garantindo ambiente seguro e adequado aos padrões sanitários.',
+    icone: '🧹'
+  },
+  {
+    id: 'enfermeiro-plantao',
+    titulo: 'Enfermeiro Plantonista',
+    nivel: 'Pleno',
+    modalidade: 'Presencial - Plantões',
+    salario: 'R$ 4.000 - 7.000',
+    categoria: 'Assistência à Saúde',
+    requisitos: [
+      'Graduação em Enfermagem',
+      'COREN ativo',
+      'Experiência em enfermaria ou unidades de internação',
+      'Conhecimento em procedimentos de enfermagem'
+    ],
+    diferenciais: [
+      'Pós-graduação em áreas hospitalares',
+      'Experiência com pacientes internados',
+      'Curso de APH ou emergência'
+    ],
+    descricao: 'Prestar assistência de enfermagem aos pacientes internados nos quartos, administrar medicamentos e monitorar condições de saúde.',
+    icone: '👨‍⚕️'
+  },
+  {
+    id: 'tecnico-manutencao',
+    titulo: 'Técnico de Manutenção Predial',
+    nivel: 'Técnico',
+    modalidade: 'Presencial',
+    salario: 'R$ 3.000 - 5.000',
+    categoria: 'Manutenção e Infraestrutura',
+    requisitos: [
+      'Curso técnico em elétrica, hidráulica ou predial',
+      'Experiência em manutenção preventiva',
+      'Conhecimento em normas técnicas',
+      'Organização e pró-atividade'
+    ],
+    diferenciais: [
+      'Experiência em ambiente hospitalar',
+      'NR10 ou outras certificações',
+      'Conhecimento em sistemas de climatização'
+    ],
+    descricao: 'Manter a infraestrutura dos quartos hospitalares em perfeito estado, realizando reparos e prevenindo falhas nos sistemas elétricos e hidráulicos.',
+    icone: '🔧'
+  },
+  {
+    id: 'nutricionista',
+    titulo: 'Nutricionista Hospitalar',
+    nivel: 'Pleno',
+    modalidade: 'Híbrido',
+    salario: 'R$ 4.500 - 8.000',
+    categoria: 'Assistência Nutricional',
+    requisitos: [
+      'Graduação em Nutrição',
+      'CRN ativo',
+      'Experiência em nutrição clínica hospitalar',
+      'Conhecimento de dietoterapia'
+    ],
+    diferenciais: [
+      'Pós-graduação em nutrição clínica',
+      'Experiência com pacientes internados',
+      'Conhecimento de software de nutrição'
+    ],
+    descricao: 'Elaborar planos alimentares personalizados para pacientes internados nos quartos, acompanhar evolução nutricional e orientar equipe sobre dietas especiais.',
+    icone: '🍎'
+  }
+];
 
   const beneficios = [
     { icone: '🏥', titulo: 'Plano de Saúde', descricao: 'Cobertura completa para você e família' },
