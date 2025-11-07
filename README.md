@@ -83,16 +83,5 @@ cd hospital-quartos
 | Rafael Lima Reis                  | 2401699  |
 | Jhonata Nunes Almeida             | 2401461  |
 
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 📧 Contato
-
-Para mais informações sobre o projeto, entre em contato através de:
-- Email: contato@hospitalquartos.com
-- Website: [Em breve]
-
----
 
 ⭐ Desenvolvido com dedicação pela equipe Hospital Quartos
